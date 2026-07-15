@@ -9,14 +9,29 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#">
-        <!-- 로고 이미지를 assets/logo.png에 업로드 해 주세요 -->
+      <a class="logo" href="index.html">
         <img src="assets/logo.png" alt="THE MUZE ENTERTAINMENT logo">
       </a>
+
+      <!-- Desktop nav -->
       <nav class="main-nav" aria-label="주요 메뉴">
         <ul>
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#rescene">RESCENE</a></li>
+          <li><a href="rescene.html" target="_blank" rel="noopener">RESCENE</a></li>
+          <li><a href="#audition">AUDITION</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <!-- Mobile nav (visible when toggled) -->
+      <nav class="mobile-nav" aria-label="모바일 메뉴">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="rescene.html" target="_blank" rel="noopener">RESCENE</a></li>
           <li><a href="#audition">AUDITION</a></li>
         </ul>
       </nav>
@@ -40,8 +55,8 @@
 
     <section id="rescene" class="section">
       <div class="container">
-        <h2>Rescene</h2>
-        <p>Rescene 관련 콘텐츠를 표시하세요.</p>
+        <h2>Rescene (미리보기)</h2>
+        <p>Rescene 섹션은 별도 페이지로 이동합니다. 상단 메뉴의 RESCENE을 클릭하면 새 탭으로 열립니다.</p>
       </div>
     </section>
 
@@ -58,5 +73,7 @@
       <small>&copy; THE MUZE ENTERTAINMENT</small>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
